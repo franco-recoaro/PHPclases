@@ -1,0 +1,31 @@
+<?php include 'includes/header.php';
+
+//CREAMOS VARIABLES CON EL SIGNO DOLAR $ + EL NOMBRE 
+//NO PUEDE INICIAR CON NUMEROS NI CARACTERES EXTRAÑOS
+//LAS VARIABLES EN PHP NO SON TIPADAS, NO DEBEMOS DECIR SI ES NUMERO O STRING O BOOLEANO
+//NO SE CREAN CON VAR,LET O CONST
+
+$nombre = "Juan"; //CREO VARIABLE NOMBRE CON VALOR JUAN
+$nombre = "Juan 2"; //REASIGNO VARIABLE NOMBRE CON VALOR JUAN 2
+
+echo $nombre;
+echo "<br>";
+var_dump($nombre);
+echo "<br>";
+
+//CON EL DEFINE LO QUE CREA ES UN IDENTIFICADOR Y PARA MOSTRARLO NO DEBEMOS COLOCAR SIGNO DOLAR
+//NO ES LO MISMO VARIABLE QUE IDENTIFICADOR
+//COLOCAMOS DEFINE, ENTRE PARENTESIS EL IDENTIFICADOR Y EL VALOR
+define('constante', "Este es el valor de la constante");
+echo constante;
+echo "<br>";
+
+//OTRA FORMA DE CREAR IDENTIFICADORES ES CON CONST
+const constante2 = "Hola 2";
+echo constante2;
+
+//FORMA DE CREAR VARIABLES
+$nombreCliente = "Pedro"; //CAMEL CASE
+$nombre_cliente = "Pedro"; //ESTILO PHP
+
+include 'includes/footer.php';
